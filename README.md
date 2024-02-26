@@ -4,7 +4,36 @@
     <head> 
         <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
         <title>Kenneth's Testing Ground</title> 
-        <link href = "stylesht.css" rel='stylesheet'>
+        <style>* {
+    margin: 0;
+}
+
+.clicky_links {
+    /* display: block; */
+    margin: 0;
+    background-color: rgb(122, 226, 226);
+    padding: 10px;
+    overflow: hidden;
+    text-align: left;
+    border: 1px solid gray;
+}
+
+nav a {
+    display: inline-block;
+    color: rgb(124, 107, 87);
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 5px;
+
+}
+
+body {
+    background: linear-gradient(90deg,rgb(238, 177, 177), rgb(213, 192, 255) );
+}
+
+div, h1, p { 
+    padding: 5px;
+}</style>
     </head> 
         <nav class = "clicky_links">
             <a href = "/Users/kennethzheng_/Downloads/html/test2.html" style="text-decoration:none">same tab link</a>
