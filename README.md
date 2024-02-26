@@ -37,7 +37,39 @@
                 <button onclick="reset()">reset</button>
                 <button onclick = "square2()">^2</button>
                 <button onclick="sqrt()">sqrt</button>
-                <script src="something.js"></script>
+                <script >
+                let currentNumber = 0;
+
+
+function changeNumber() {
+    currentNumber++;
+
+    document.getElementById("numberDisplay").innerHTML = currentNumber;
+}
+
+function reset() {
+    currentNumber = 0;
+    document.getElementById("numberDisplay").innerHTML = currentNumber;
+}
+
+function square2() {
+    currentNumber = Math.floor(currentNumber * currentNumber*100)/100;
+    // .getElementById() finds the id thats in the paren and then change it
+    document.getElementById("numberDisplay").innerHTML = currentNumber;
+}
+
+function sqrt() {
+    if (currentNumber >= 0) {
+        currentNumber = Math.floor(100*(currentNumber ** (1/2)))/100
+    }else{
+        currentNumber = "imaginary";
+    }
+    document.getElementById("numberDisplay").innerHTML = currentNumber;
+}
+function decr(){
+    currentNumber --;
+    document.getElementById("numberDisplay").innerHTML = currentNumber;
+}</script>
             </div>
         </body> 
     </html>
