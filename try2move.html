@@ -24,7 +24,11 @@
                 top: 345px;
             }
             #home {
-                background-color: white;
+                display: inline-block;
+                color: rgb(124, 107, 87);
+                border: 2px solid gray;
+                border-radius: 10px;
+                padding: 5px;
             }
         </style>
     </head>
@@ -32,7 +36,7 @@
         <button onclick="move()" id="mover">move hand</button>
         <button onclick="move_back()" id="reset">go back</button>
         <button onclick="letGo()">Let Go</button>
-        <button id = "home"> <a href = "test_file.html" >Home</a></button>
+        <a id="home" href = "test_file.html" >Home</a>
         <p>source: 
             <a href = "sources.html"
             target = "_blank" >
