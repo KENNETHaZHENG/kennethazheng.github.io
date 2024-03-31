@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+        <title>Cursor Tests</title>
+        <style>
+            * {
+                margin: 0;
+            }
+            nav {
+                background-color: rgb(182, 216, 246);
+                padding: 10px;
+                overflow: hidden;
+            }
+
+            nav a {
+                text-decoration:none;
+                padding: 5px;
+                border: 2px solid gray;
+                display: inline-block;
+            }
+
+            div img:hover {
+                cursor: grab;
+            }
+            
+            div #img_1 {
+                position:absolute;
+                top: 100px;
+                left: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav> 
+            <a href = "test_file.html"> Home </a>
+        </nav>
+        <div id="im_garage">
+            <p id = 'X_c'>X-coordinate:</p>
+            <p id = 'Y_c'>Y-coordinate:</p>
+            <img id = 'img_1'
+            src = 'https://img.freepik.com/free-photo/abstract-luxury-soft-red-background-christmas-valentines-layout-design-studio-room-web-template-business-report-with-smooth-circle-gradient-color_1258-54519.jpg?size=626&ext=jpg&ga=GA1.1.1718530862.1707622124&semt=ais'
+            width = '240'
+            onclick = 'drag(event)'>
+
+        </div>
+        <script>
+            let hold = false;
+            function drag(event) {
+                hold = true;
+                let X = event.clientX,
+                    Y = event.clientY;
+                const x_size = document.getElementById("img_1").clientWidth,
+                      y_size = document.getElementById("img_1").clientHeight;
+                let result = document.getElementById("X_c"),
+                y_coo = document.getElementById("Y_c");
+                result.innerHTML = "<b>X-coordinate: </b>" + X ;
+                y_coo.innerHTML  = "<b>Y-coordinate: </b>" + Y ;
+                document.getElementById("img_1").style.top = Y - y_size/2 + 'px';
+                document.getElementById("img_1").style.left = X - x_size/2 + 'px';
+            }
+
+            
+        </script>
+    </body>
+</html>

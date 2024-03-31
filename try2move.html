@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Hi</title>
+        <h2>Hands</h2>
+        <style>
+            #hand {
+                margin-left: 1px;
+                /* 135px + 100 */
+                margin-top: 100px;
+            }
+            /* * {
+                border: 1px solid black;
+            } */
+            #ball {
+                position: fixed;
+                opacity: 1;
+            }
+            #ball2 {
+                position:fixed;
+                opacity: 0.1;
+                left: 80px;
+                top: 345px;
+            }
+        </style>
+    </head>
+    <body>
+        <button onclick="move()" id="mover">move hand</button>
+        <button onclick="move_back()" id="reset">go back</button>
+        <button onclick="letGo()">Let Go</button>
+        <p>source: 
+            <a href = "/Users/kennethzheng_/Downloads/html/sources.html"
+            target = "_blank" >
+            Click here</a>
+        </p>
+        <img id = 'ball' src = 
+        "https://dmzn2b8hkpq8b.cloudfront.net/images/products/515x515/S284986.jpg"
+        width = "80" length = "60">
+        <img id = 'hand' src = 
+        "https://media.istockphoto.com/id/462795637/photo/hand-gestures-on-white-background.jpg?s=1024x1024&w=is&k=20&c=F5qqoeo_ItpxmDoVEh0STd5Hvmc_-ALqhhXoo9yRNls="
+        width = "160" length = "120">
+        <br>
+        <img id = 'ball2' src = 
+        "https://dmzn2b8hkpq8b.cloudfront.net/images/products/515x515/S284986.jpg"
+        width = "80" length = "60">
+    </body>
+    <script>
+        let h = 100,
+        d = 0;
+        var w = window.innerWidth,
+        tFs = window.innerHeight,
+        ball_x = w - 200,
+        ball_y = tFs*.25,
+        stuf = document.getElementById('ball'),
+        ghri = false;
+        document.getElementById('ball').style.top = (tFs*.25)+ 'px';
+        document.getElementById('ball').style.left = (w-200) + 'px';
+        function move(){
+            let imgHand = document.getElementById('hand').style.marginTop;
+            let fistimg = 'https://previews.123rf.com/images/bkrzyzanek/bkrzyzanek1809/bkrzyzanek180900030/109131091-male-right-hand-counting-zero-fist-isolated.jpg'
+            if (h >= 0){
+                h -= (250 - ball_y) / 10;
+                d += (w-245) / 10;
+                hei = h + 'px';
+                len = d + 'px';
+                document.getElementById('hand').style.marginTop = hei;
+                document.getElementById('hand').style.marginLeft = len;
+                if (h + 150 < (ball_y)){
+                    document.getElementById('hand').src = fistimg
+                    document.getElementById('hand').style.transform = "rotate(90deg)";
+                    document.getElementById('ball').style.opacity = 0
+                }
+            }
+        }
+
+        function move_back() {
+            let imgHand = document.getElementById('hand').style.marginTop;
+            if (h < 100){
+                h += (250 - ball_y) / 10;
+                d -= (w-245) / 10;
+                hei = h + 'px';
+                len = d + 'px';
+                document.getElementById('hand').style.marginTop = hei;
+                document.getElementById('hand').style.marginLeft = len;
+                if (h >= 90 && d <= 10 && stuf.style.opacity == 0) {
+                    document.getElementById('hand').src = 'https://as2.ftcdn.net/v2/jpg/03/60/86/41/1000_F_360864165_Yqm24igUnCI8ObYnaJFL6d1FkzVvqeHE.jpg';
+                    document.getElementById('hand').style.transform = "rotate(0deg)";
+                    ghri = true;
+                }
+            }
+        }
+
+        function letGo() {
+            if (ghri) {
+                document.getElementById('hand').src = 'https://media.istockphoto.com/id/814563836/photo/left-side-hand-of-a-man-trying-to-reach-or-grab-something-fling-touch-sign-reaching-out-to-the.jpg?s=1024x1024&w=is&k=20&c=9k2KRiC9veRSI-MDGOKprWUqcdZfBOzETByJa1d6SMk=';
+                document.getElementById('ball2').style.opacity = .9;
+            }
+        }
+        let exisBal = document.getElementById('ball2'),
+         ball2H = 345;
+        if (exisBal.style.opacity == ".1") {
+            exisBal.style.top = 130+'px';
+        }
+    </script>
+</html>
