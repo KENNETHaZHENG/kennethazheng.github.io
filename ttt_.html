@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <h2> <em><u> Tic Tack Toe </u></em></h2>
+        <style>
+            button {
+                width : 30px;
+                height : 30px;
+            }
+        </style>
+    </head>
+    <div id="ttt">
+        <p><strong id = 'turn'>Player As Turn</strong></p>
+        <!-- this.id is very useful  :); works in html tho -->
+
+        <button id  = "(0,0)" onclick = "numChan(this.id)" aria-disabled="false">0</button>
+        <button id = '(0,1)' onclick = "numChan(this.id)" aria-disabled="false">0</button>
+        <button id = '(0,2)'onclick = "numChan(this.id)" aria-disabled="false">0</button>
+        <br>
+        <button id = '(1,0)' onclick = "numChan(this.id)" aria-disabled="false">0</button>
+        <button id = '(1,1)' onclick = "numChan(this.id)" aria-disabled="false">0</button>
+        <button id = '(1,2)' onclick = "numChan(this.id)" aria-disabled="false">0</button>
+        <br>
+        <button id = '(2,0)' onclick = "numChan(this.id)" aria-disabled="false">0</button>
+        <button id = '(2,1)' onclick = "numChan(this.id)" aria-disabled="false">0</button>
+        <button id = '(2,2)' onclick = "numChan(this.id)" aria-disabled="false">0</button>
+        <script src = "ttt.js"></script>
+    </div>
+</html>
