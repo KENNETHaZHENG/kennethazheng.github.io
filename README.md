@@ -20,8 +20,8 @@
                 <h3>Bullet Points</h3>
                 <ul>
                     <li>bunny: </li>
-                    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.breadboxfarm.com%2Fcare-sheet&psig=AOvVaw3g2jOhti3RdSfh4QlYlOw2&ust=1712012354789000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOCYrpXNn4UDFQAAAAAdAAAAABAE" 
-                    width = "320" length = "240" alt="" onclick="alert('bunny')"/>
+<!--                     <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.breadboxfarm.com%2Fcare-sheet&psig=AOvVaw3g2jOhti3RdSfh4QlYlOw2&ust=1712012354789000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOCYrpXNn4UDFQAAAAAdAAAAABAE" 
+                    width = "320" length = "240" alt="" onclick="alert('bunny')"/> -->
                     <li>second bullet</li>
                 </ul>
             </div>
