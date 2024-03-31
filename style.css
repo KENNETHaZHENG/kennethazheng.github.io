@@ -1,0 +1,49 @@
+div {
+    color:rgb(6, 54, 143);
+}
+
+* {
+    border: 1px solid gray;
+}
+
+/* .{class} */
+.title {
+    color: teal;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* #{id} { stuf: something; } 
+   [href] {color:magenta;} targets all elements with a href attribute*/
+#hi {
+    color: rgb(133, 74, 74)
+}
+/* - font-family changes the font
+   - text-transform can make the text all uppercased
+   - you can prevent writing the same thing over again by
+    putting seperators before the brackets*/
+p.wutever,
+ul {
+    font-family:cursive;
+}
+h2 { 
+    /* text-align align text to element that holds it */
+    text-align: center;
+}
+/* <img src = 'winter.jpg'>
+   img[src*='winter'] { height: 50px; } => targets the img that's associated 
+   w winter.jpg */
+
+/* targets the ordered lists inside anything with the class of 'lists' */
+/* called 'Chaining' */
+.lists li {
+    font-weight: 100;
+    background-color: lightblue;
+    color: lightcoral;
+}
+div h3 {
+    font-style: italic;
+    color: black;
+}
