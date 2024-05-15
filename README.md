@@ -4,8 +4,8 @@
                 background-color: bisque;
                 /* place-content: center; */
             }
-            #box{
-                width: 1000px;
+            div, #box {
+                width: 900px;
                 height: 50px;
                 border: 5px solid rgb(206, 206, 255);
                 background-color: rgb(214, 214, 236);
