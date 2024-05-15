@@ -71,9 +71,9 @@
         }
         function move() {
             box.rotate = "90deg"; 
-            box.transform = "translate(40%)";
-            box.height = "60%";
-            box.transition = "all 3s";
+            box.transform = "translate(30%)";
+            box.height = "75%";
+            box.transition = "all 2s";
             woah.rotate = "270deg";
             woah.padding = "20px";
             pow();
