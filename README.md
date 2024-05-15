@@ -4,7 +4,7 @@
                 background-color: bisque;
                 /* place-content: center; */
             }
-            div #box{
+            #box{
                 width: 1000px;
                 height: 50px;
                 border: 5px solid rgb(206, 206, 255);
