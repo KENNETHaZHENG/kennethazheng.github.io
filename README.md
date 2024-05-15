@@ -1,6 +1,4 @@
-<html>
     <head>
-        <title>wow</title>
         <style>
             body {
                 background-color: bisque;
@@ -52,7 +50,6 @@
         </style>
     </head>
     <body>
-        <h2>Kenneth's Home</h2>
         <img id="emoji1" src="https://www.usatoday.com/gcdn/presto/2018/11/01/USAT/788eaad4-8c20-4a46-92ff-f6df41d4813d-DrunkEmoji3110.jpg?width=660&height=440&fit=crop&format=pjpg&auto=webp"
         >
         <button id="woah" onclick="move()">EXPAND</button>
@@ -90,4 +87,3 @@
         //     // setTimeout(pow(), 2000);
         // };
     </script>
-</html>
