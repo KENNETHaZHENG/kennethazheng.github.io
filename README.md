@@ -72,7 +72,7 @@
         function move() {
             box.rotate = "90deg"; 
             box.transform = "translate(30%)";
-            box.height = "60%";
+            box.height = "80%";
             box.transition = "all 2s";
             woah.rotate = "270deg";
             woah.padding = "20px";
